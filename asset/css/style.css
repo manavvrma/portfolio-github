@@ -423,9 +423,9 @@ body.nav-active {
   padding-block-start: calc(var(--section-padding) + 50px);
   /* background-color: white;  */
 
-  background-image: url("../images/bg3.jpg");
+  background-image: url("../images/bg7.jpg");
   background-size: cover;
-  background-position: top;
+  background-position: center;
   padding-block: 100px;
   position: relative;
   z-index: 1;
@@ -503,6 +503,11 @@ body.nav-active {
   width: 100%;
   border-radius: var(--radius-pill);
   overflow: hidden;
+}
+
+.center-text {
+  justify-content: center;
+  text-align: justify;
 }
 
 .progress-fill {
