@@ -423,9 +423,9 @@ body.nav-active {
   padding-block-start: calc(var(--section-padding) + 50px);
   /* background-color: white;  */
 
-  background-image: url("../images/bg7.jpg");
+  background-image: url("../images/bg8.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   padding-block: 100px;
   position: relative;
   z-index: 1;
