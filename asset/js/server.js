@@ -4,6 +4,8 @@ const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const cors = require("cors");
 
+const path = require("path");
+
 const app = express();
 const port = 3000;
 
@@ -11,8 +13,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
-console.log("EMAIL_USER:", process.env.EMAIL_USER);
-console.log("EMAIL_PASS:", process.env.EMAIL_PASS);
+// Serve static files from the project root
+app.use(express.static(path.join(__dirname, "../../")));
 
 const transporter = nodemailer.createTransport({
   service: "gmail",
