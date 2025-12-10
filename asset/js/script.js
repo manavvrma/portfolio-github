@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
       message: formData.get("message"),
     };
 
-    fetch("/send-email", {
+    fetch("/api/send-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
